@@ -22,10 +22,6 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1"
   },
-  "dependencies": {
-    "express": "^4.17.1",
-    "body-parser": "^1.19.0",
-    "bcrypt": "^0.8.5"
- },
+  "dependencies": {},
   "keywords": []
 }
