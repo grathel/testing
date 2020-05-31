@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
+    "server": "node-env-run server --exec nodemon | pino-colada",
     "test": "test"
   },
   "repository": {
@@ -16,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/grathel/testing/issues"
   },
-  "homepage": "https://github.com/grathel/testing#readme"
+  "homepage": "https://github.com/grathel/testing#readme",
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
 }
