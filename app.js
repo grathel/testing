@@ -1,19 +1,15 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const pino = require('express-pino-logger')();
+// create an express app
+const express = require("express")
+const app = express()
 
-const app = express();
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(pino);
+// use the express-static middleware
+app.use(express.static("public"))
 
-port = process.env.PORT || process.argv[2] || 8080;
+// define the first route
+app.get("/", function (req, res) {
+  res.send("<h1>Hello World!</h1>")
+})
 
-app.get('/api/greeting', (req, res) => {
-  const name = req.query.name || 'World';
-  res.setHeader('Content-Type', 'application/json');
-  res.send(JSON.stringify({ greeting: `Hello ${name}!` }));
-});
-
-app.listen(port, () =>
-    console.log('app up on port: ' + port)
-);
+// start the server listening for requests
+app.listen(process.env.PORT || 3000, 
+	() => console.log("Server is running..."));
