@@ -1,13 +1,13 @@
 // using the http module
-import { createServer } from 'http';
-let
-    // look for PORT environment variable, 
-    // else look for CLI argument,
-    // else use hard coded value for port 8080
-    port = process.env.PORT || process.argv[2] || 8080;
+let http = require('http'),
+ 
+// look for PORT environment variable, 
+// else look for CLI argument,
+// else use hard coded value for port 8080
+port = process.env.PORT || process.argv[2] || 8080;
  
 // create a simple server
-let server = createServer(function (req, res) {
+let server = http.createServer(function (req, res) {
  
         res.writeHead(200, {
             'Content-Type': 'text/plain'
