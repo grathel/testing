@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grathel/testing.git"
+  },
+  "author": "Mateusz Truszkowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grathel/testing/issues"
+  },
+  "homepage": "https://github.com/grathel/testing#readme"
+}
