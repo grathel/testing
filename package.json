@@ -23,8 +23,8 @@
     "express": "^4.17.1"
   },
   "dependencies": {
-    "express":"*",
-    "body-parser":"*",
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0",
     "bcrypt": "^0.8.5"
  },
   "keywords": []
